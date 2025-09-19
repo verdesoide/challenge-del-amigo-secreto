@@ -1,39 +1,48 @@
-# 🎁 Proyecto: Amigo Secreto
+# 🎁 Challenge del Amigo Secreto
 
-## 📖 Descripción
+## 📌 Descripción del proyecto
+Este proyecto es una aplicación web sencilla para organizar un **juego de Amigo Secreto**.  
+Permite a los usuarios agregar nombres a una lista y luego sortear aleatoriamente a un ganador.  
+El objetivo principal es **practicar lógica de programación, manipulación del DOM y manejo de validaciones en JavaScript**.
 
-El presente proyecto consiste en una aplicación web denominada **Challenge Amigo Secreto**, cuyo objetivo es permitir a los usuarios ingresar una lista de nombres y realizar un sorteo aleatorio para seleccionar un ganador.  
-Se trata de una implementación sencilla que integra las tecnologías fundamentales del desarrollo web: **HTML, CSS y JavaScript**.
 
----
+## ⚡ Funcionalidades
+- Agregar nombres a una lista de participantes.  
+- Validaciones al momento de ingresar un nombre:
+  - No se permite dejar el campo vacío.  
+  - El nombre debe tener al menos 3 caracteres.  
+  - No se permiten solo números.  
+  - No se pueden repetir nombres.  
+- Mostrar en pantalla la lista de amigos agregados.  
+- Realizar un **sorteo aleatorio** para elegir al ganador.  
+- Interfaz simple e intuitiva, fácil de usar.
 
-## 🚀 Funcionalidades
 
-1. **Ingreso de nombres**  
-   - El usuario puede digitar un nombre en un campo de texto y añadirlo a la lista de participantes.  
+## 🖥️ Cómo usarlo
+1. Clonar este repositorio en tu computadora:
+   ```bash
+   git clone https://github.com/verdesoide/challenge-del-amigo-secreto.git
+   Abrir el archivo index.html en cualquier navegador.
+2. Abrir el archivo index.html en cualquier navegador.
 
-2. **Validaciones al agregar**  
-   - El nombre no puede estar vacío.  
-   - Debe contener al menos **3 caracteres**.  
-   - No se permiten entradas compuestas únicamente por números.  
-   - No se aceptan duplicados.  
+3. Escribir un nombre en el campo de texto y hacer clic en "Añadir".
 
-3. **Visualización de la lista**  
-   - Los nombres ingresados se muestran dinámicamente en pantalla mediante una lista HTML.  
+4. Una vez cargados todos los nombres, presionar el botón "Sortear amigo".
 
-4. **Sorteo de amigo secreto**  
-   - El sistema selecciona de manera aleatoria uno de los nombres almacenados en el arreglo.  
-   - El ganador se muestra en la interfaz de forma destacada.  
+5. El ganador aparecerá en pantalla 🎉.
 
----
 
-## 🛠️ Tecnologías utilizadas
+📖 Ayuda y soporte
 
-- **HTML5:** Estructuración semántica del contenido y definición de los elementos principales de la interfaz.  
-- **CSS3:** Estilización de la aplicación, incluyendo colores, tipografía, distribución y diseño responsivo.  
-- **JavaScript (Vanilla JS):** Lógica del sistema, validaciones de entrada, gestión del arreglo de nombres, manipulación del DOM y selección aleatoria del ganador.  
+Si encontrás algún problema o querés hacer mejoras, podés:
 
----
+Crear un issue en el repositorio.
 
-## 📂 Estructura del proyecto
+Consultar la documentación de JavaScript en MDN
 
+
+👥 Autores
+
+Proyecto desarrollado por:
+
+Lautaro Cabeza
