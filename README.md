@@ -32,6 +32,7 @@ El objetivo principal es **practicar lógica de programación, manipulación del
 5. El ganador aparecerá en pantalla 🎉.
 
 
+
 📖 Ayuda y soporte
 
 Si encontrás algún problema o querés hacer mejoras, podés:
@@ -39,6 +40,7 @@ Si encontrás algún problema o querés hacer mejoras, podés:
 Crear un issue en el repositorio.
 
 Consultar la documentación de JavaScript en MDN
+
 
 
 👥 Autores
