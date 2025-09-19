@@ -4,46 +4,46 @@ let amigos = [];
 
 // esta función se llama cuando el usuario hace clic en "Añadir"
 function agregarAmigo() {
-    // una vez que coloque el nombre en cuestion, el usuario dará click en añadir y lo hara
+    // obtenemos el valor del input
     let input = document.getElementById("amigo");
-    let nombre = input.value.trim(); // quitamos espacios al principio y al final para que se vea mejor organizado y mejor visualmente
+    let nombre = input.value.trim(); // quitamos espacios al inicio y al final
 
     // limpiamos el resultado anterior si hay
     document.getElementById("resultado").innerHTML = "";
 
-       // validación: campo vacío
+    // validación: campo vacío
     if (nombre === "") {
         alert("Por favor, inserte un nombre.");
         return;
     }
-    // verificamos si el nombre tiene menos de 3 letras como para que sea mas realista
+
+    // validación: mínimo 3 letras
     if (nombre.length < 3) {
         alert("El nombre debe tener al menos 3 letras.");
         return;
     }
 
-    // Verificamos si el nombre son solo números (por ejemplo: "1234")
+    // validación: no solo números
     if (/^\d+$/.test(nombre)) {
         alert("El nombre no puede tener solo números.");
         return;
     }
 
-    // verificamos si el nombre ya está en la lista para asi realizar la siguiente acción
+    // validación: no repetidos
     if (amigos.indexOf(nombre) !== -1) {
         alert("Ese nombre ya existe");
         return;
     }
-    
-    // si todo está bien, lo agregamos a la lista como corresponde
+
+    // si todo está bien, agregamos a la lista
     amigos.push(nombre);
 
-
+    // actualizamos la lista en pantalla
     mostrarLista();
 
-       // limpiamos el campo de texto
+    // limpiamos el campo de texto
     input.value = "";
     input.focus();
-
 }
 
 // función que recorre el array y muestra los nombres en la lista HTML
@@ -65,11 +65,11 @@ function sortearAmigo() {
         return;
     }
 
-    // Elegimos un número al azar entre 0 y el largo de la lista - 1
+    // elegimos un número al azar entre 0 y el largo de la lista - 1
     let posicion = Math.floor(Math.random() * amigos.length);
     let nombreGanador = amigos[posicion];
 
-    // Mostramos el nombre ganador en pantalla
+    // mostramos el nombre ganador en pantalla
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = "<li>🏆 El ganador es: <strong>" + nombreGanador + "</strong></li>";
 }
