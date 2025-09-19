@@ -2,7 +2,7 @@
 
 ## 📖 Descripción
 
-El presente proyecto consiste en una aplicación web denominada **Amigo Secreto**, cuyo objetivo es permitir a los usuarios ingresar una lista de nombres y realizar un sorteo aleatorio para seleccionar un ganador.  
+El presente proyecto consiste en una aplicación web denominada **Challenge Amigo Secreto**, cuyo objetivo es permitir a los usuarios ingresar una lista de nombres y realizar un sorteo aleatorio para seleccionar un ganador.  
 Se trata de una implementación sencilla que integra las tecnologías fundamentales del desarrollo web: **HTML, CSS y JavaScript**.
 
 ---
