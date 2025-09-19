@@ -33,7 +33,7 @@ function agregarAmigo() {
         alert("Ese nombre ya existe");
         return;
     }
-}
+    
     // si todo está bien, lo agregamos a la lista como corresponde
     amigos.push(nombre);
 
@@ -44,7 +44,7 @@ function agregarAmigo() {
     input.value = "";
     input.focus();
 
-
+}
 
 // función que recorre el array y muestra los nombres en la lista HTML
 function mostrarLista() {
